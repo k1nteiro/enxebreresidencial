@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #008228;
+  border: none !important;
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    > .banner {
+      display: flex;
+      height: 57px;
+      justify-content: center;
+      margin-right: 5px;
+      
+      > .banner-logo {
+        padding: 5px;
+        background-color: white;
+        border-radius: 4px;
+        
+        > img {
+          height: 100%;                    /* Will be used by browsers which ignore both the -moz and -webkit-prefixed declarations or do not support -moz-available or -webkit-fill-available. */
+          height: -moz-available;          /* WebKit-based browsers will ignore this. */
+          height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        }
+      }
+    }
+
+  }
+
+}
