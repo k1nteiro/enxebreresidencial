@@ -4,3 +4,74 @@
   height: -moz-available;          /* WebKit-based browsers will ignore this. */
   height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
 }
+
+.whoweare {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .organization {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    > .commonTitle > span {
+      border-bottom: 3px solid #008228;
+      padding: 10px;
+      font-size: 2em;
+      font-weight: bold;
+      width: 100%;
+    }
+  
+    > .organization-body {
+      margin-top: 20px;
+      gap: 20px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      > .person {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+  
+        > .image {
+  
+          > img {
+            max-height: 150px;
+            border-radius: 50%;
+            border-radius: 50%;
+            width: 100%;
+          }
+        }
+  
+        > .description {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+  
+          > .name, .job {
+            width: 100%;
+            text-align: center;
+          }
+  
+          > .name {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .whoweare-body {
+    border-top: 3px solid #008228;
+    padding: 10px;
+    text-align: justify;
+  }
+}

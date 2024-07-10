@@ -1,0 +1,32 @@
+<div class="home">
+
+  <div class="home-title">
+    <div class="title-body">
+      <div class="name commonTitle">
+        <h1>{{ Title }}</h1>
+      </div>
+      <h5 class="population commonTitle">{{ Population }}</h5>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="img-fluid rounded-start">
+      <div id="carouselMain" class="carousel slide" data-bs-ride="true" data-bs-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item" *ngFor="let item of ImagesAndText; let i = index" [ngClass]="{ 'active': i === 0 }">
+            <img [src]="item.Image" class="d-block w-100" [alt]="item.Text">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next" id="nextImageButton">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>

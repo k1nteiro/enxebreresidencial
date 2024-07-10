@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SharedModule } from '../shared/shared.module';
-import { OrganizationComponent } from './organization/organization.component';
 
 
 
@@ -11,7 +10,6 @@ import { OrganizationComponent } from './organization/organization.component';
   declarations: [
     FooterComponent,
     HeaderComponent,
-    OrganizationComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +18,6 @@ import { OrganizationComponent } from './organization/organization.component';
   exports: [
     FooterComponent,
     HeaderComponent,
-    OrganizationComponent
   ]
 })
 export class CoreModule { }

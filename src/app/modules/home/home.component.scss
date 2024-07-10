@@ -1,0 +1,40 @@
+:host {
+  background-color: transparent;
+  height: 100%;                    /* Will be used by browsers which ignore both the -moz and -webkit-prefixed declarations or do not support -moz-available or -webkit-fill-available. */
+  height: -moz-available;          /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+}
+
+.home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  > .home-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > .title-body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      > .name {
+        width: 100%;
+      }
+
+      > .population {
+        width: fit-content;
+      }
+    }
+  }
+
+  .carousel > .carousel-inner {
+    border-radius: 10px;
+  }
+}

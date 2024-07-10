@@ -27,3 +27,12 @@ app-root {
   white-space: nowrap;
   overflow: hidden;
 }
+
+.commonTitle {
+  color: #008228;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}

@@ -4,37 +4,25 @@ app-header {
 }
 
 .app-body {
-  height: auto;
-  background-image: url(/assets/img/exterior.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 100%;
+  background-color: #cfffcf;
   display: flex;
   flex-direction: row;
 
-  app-organization {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 4px;
-    border: 1px solid green;
-    background-color: #cfffcf;;
-    width: 30%;
-  }
-
   ::ng-deep app-whoweare,
-  ::ng-deep app-contact {
+  ::ng-deep app-contact,
+  ::ng-deep app-home {
     padding: 10px;
     margin: 10px;
-    margin-left: 0px;
     border-radius: 4px;
-    border: 1px solid green;
-    background-color: #cfffcf;;
-    width: 70%;
+    border: 1px solid #008228;
+    background-color: #ebffeb;
+    width: 100%;
   }
 
   ::ng-deep app-home {
     background-color: transparent;
-    width: 70%;
+    border: none;
   }
 }
 
