@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivienda Comunitaria Enxebre</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #000000;
+            background-color: #ffffff;
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px;
+        }
+        header {
+            background-color: #8bd985;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+        }
+        header p {
+            font-size: 1rem;
+        }
+        nav {
+            background-color: #69ba62;
+            color: #ffffff;
+            padding: 0.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+			align-items: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 5px;
+            text-align: center;
+            flex-grow: 1;
+            max-width: 200px;
+        }
+        nav a:hover {
+            background-color: #daffd7;
+            color: #328232;
+            border-radius: 5px;
+        }
+        .content {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+		.content > p {
+			margin-bottom: 10px;
+		}
+        h2 {
+            color: #8bd985;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #69ba62;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        ul {
+            background-color: #daffd7;
+            padding: 15px;
+            border-radius: 5px;
+            list-style-position: inside;
+        }
+        ul li {
+            color: #328232;
+            margin-bottom: 5px;
+        }
+        footer {
+            background-color: #8bd985;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            width: 100%;
+        }
+		.footer_green_emissions {
+			width: 100%;
+			padding: 10px;
+			color: white;
+			display: flex;
+			flex-direction: row;
+			gap: 10px;
+			align-items: center;
+			justify-content: center;
+		}
+		.green_emissions_image_container {
+			background-color: white;
+			padding: 3px;
+			border-radius: 4px;
+			height: 25px;
+			width: 25px;
+		}
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+                width: 100%;
+            }
+            header h1 {
+                font-size: 1.5rem;
+            }
+            header p {
+                font-size: 0.9rem;
+            }
+            .content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vivienda Comunitaria Enxebre</h1>
+        <p>Desde el corazón de Galicia, para nuestros mayores.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="quienes-somos.html">Quienes Somos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h2>Bienvenidos a Vivienda Comunitaria Enxebre</h2>
+            <p>En el corazón del rural gallego, Vivienda Comunitaria Enxebre ofrece un hogar donde nuestros mayores pueden disfrutar de la tranquilidad, el calor humano y la belleza de nuestra tierra. Nuestra misión es brindar cuidado y compañía en un entorno familiar y acogedor, lleno de vida y tradición.</p>
+			<p>Nos enorgullece contar con un amplio equipo de profesionales, lo que nos permite garantizar una atención personalizada y cercana, adaptada a las necesidades nuestros residentes.</p>
+        
+			<h3>Nuestros Valores</h3>
+            <ul>
+                <li><strong>Respeto:</strong> Valoramos la singularidad de cada persona y su historia.</li>
+				<li><strong>Dignidad:</strong> Promovemos una vida plena, con autonomía y bienestar.</li>
+				<li><strong>Igualdad:</strong> Creemos en una atención justa y personalizada, para todos por igual.</li>
+			</ul>
+        </div>
+    </div>
+
+    <footer>
+		<div class="footer_green_emissions">
+			<div class="green_emissions_image_container">
+				<img src="https://cdn.icon-icons.com/icons2/1959/PNG/256/17_122771.png" style="height: 100%;" />
+			</div>
+			<div>
+				<span><strong>Enxebre Residencial SLL</strong> se compromete a ayudar a reducir las emisiones de gases de efecto invernadero.
+				<a href="https://www.enxebreresidencial.com" style="color: white;">Más información</a>.
+				</span>
+			</div>
+		</div>
+        <p>© <span id="currentYear"></span> Enxebre Residencial SLL - Todos los derechos reservados</p>
+    </footer>
+	
+	<script>
+		document.getElementById('currentYear').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
