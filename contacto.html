@@ -46,13 +46,17 @@
 
                 <div class="contact-form">
                     <h3>Envíanos un Mensaje</h3>
-                    <form id="contactForm" action="#" method="post">
-                        <input type="text" name="nombre" placeholder="Nombre Completo" required>
-                        <input type="email" name="email" placeholder="Correo Electrónico" required>
-                        <input type="tel" name="telefono" placeholder="Teléfono (Opcional)">
-                        <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
-                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
-                    </form>
+					<form
+					  action="https://formspree.io/f/xpwqdddk"
+					  method="POST"
+					>
+						<input type="text" name="name" placeholder="Nombre Completo" required>
+						<input type="email" name="email" placeholder="Correo Electrónico" required>
+						<input type="tel" name="phone" placeholder="Teléfono (Opcional)" />
+						<input name="subject" placeholder="El asunto" required>
+						<textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+						<button type="submit" class="submit-btn">Enviar Mensaje</button>
+					</form>
                 </div>
             </div>
         </div>
